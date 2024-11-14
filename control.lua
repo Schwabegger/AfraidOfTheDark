@@ -9,8 +9,8 @@ local function on_init()
 	debug_print( "on_init" )
 	
 	for _,force in pairs(game.forces) do
-		force.recipes["balloon-light"].enabled = force.technologies["optics"].researched
-		force.recipes["short-balloon-light"].enabled = force.technologies["optics"].researched
+		force.recipes["balloon-light"].enabled = force.technologies["lamp"].researched
+		force.recipes["short-balloon-light"].enabled = force.technologies["lamp"].researched
 		force.recipes["perfect-night-glasses"].enabled = force.technologies["night-vision-equipment"].researched
 	end
 end
@@ -24,8 +24,8 @@ function on_configuration_changed(data)
 		debug_print( "update mod: ", debug_mod_name )
 		
 		for _,force in pairs(game.forces) do
-			force.recipes["balloon-light"].enabled = force.technologies["optics"].researched
-			force.recipes["short-balloon-light"].enabled = force.technologies["optics"].researched
+			force.recipes["balloon-light"].enabled = force.technologies["lamp"].researched
+			force.recipes["short-balloon-light"].enabled = force.technologies["lamp"].researched
 			force.recipes["perfect-night-glasses"].enabled = force.technologies["night-vision-equipment"].researched
 		end
 	end

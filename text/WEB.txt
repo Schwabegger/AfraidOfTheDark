@@ -20,7 +20,7 @@ You now have three progressive solutions to unveil the shadows :
 
 First, did you notice that, at night, you have an omindirectional light covering a circular area around you, and also a personal light cone ? This mod enforces these personal lights you are carrying with you. It also works when you are inside a vehicle (car, tank, airplane, and also moving locomotives). You can customize this enforcement by editing the config.lua file.
 [attachment=0]afraidofthedark-screencopy7.jpg[/attachment]
-Second, in the middle game, researching "optics" gives you access to a new powerful lamp : the "balloon light", that has a really wider ligthing area than the classical small lamp :
+Second, in the middle game, researching "lamp" gives you access to a new powerful lamp : the "balloon light", that has a really wider ligthing area than the classical small lamp :
 [attachment=5]afraidofthedark-screencopy8.jpg[/attachment]
 Third, in the later game, researching "night vision" gives you access to another pair of glasses to wear in your armor : the "perfect night glasses". With these, you can see as if it was noon under the sun ! They are very efficients to hunt in nightclubs too, but alas, you are alone on this planet :
 [attachment=4]afraidofthedark-screencopy9.jpg[/attachment]

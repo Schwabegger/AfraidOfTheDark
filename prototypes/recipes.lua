@@ -7,11 +7,11 @@ data:extend(
 		enabled = false,
 		ingredients =
 		{
-			{"electronic-circuit", 2},
-			{"iron-stick", 5},
-			{"iron-plate", 2}
+			{ type = "item", name = "electronic-circuit", amount = 2 },
+			{ type = "item", name = "iron-stick", amount = 5 },
+			{ type = "item", name = "iron-plate", amount = 2 }
 		},
-		result = "balloon-light"
+		results = { { type = "item", name = "balloon-light", amount = 1 } }
 	},
 	----------------------------------------------------------------------------------
 	{
@@ -20,11 +20,11 @@ data:extend(
 		enabled = false,
 		ingredients =
 		{
-			{"electronic-circuit", 2},
-			{"iron-stick", 2},
-			{"iron-plate", 2}
+			{ type = "item", name = "electronic-circuit", amount = 2 },
+			{ type = "item", name = "iron-stick", amount = 2 },
+			{ type = "item", name = "iron-plate", amount = 2 }
 		},
-		result = "short-balloon-light"
+		results = { { type = "item", name = "short-balloon-light", amount = 1 } }
 	},
 	----------------------------------------------------------------------------------
 	{
@@ -34,18 +34,16 @@ data:extend(
 		energy_required = 10,
 		ingredients =
 		{
-			{"advanced-circuit", 10},
-			{"steel-plate", 20}
+			{ type = "item", name = "advanced-circuit", amount = 10 },
+			{ type = "item", name = "steel-plate", amount = 20 }
 		},
-		result = "perfect-night-glasses",
+		results = { { type = "item", name = "perfect-night-glasses", amount = 1 } }
 	},
-	
 }
 )
 
-table.insert( data.raw["technology"]["optics"].effects, { type = "unlock-recipe", recipe = "balloon-light" } )
-table.insert( data.raw["technology"]["optics"].effects, { type = "unlock-recipe", recipe = "short-balloon-light" } )
 
-table.insert( data.raw["technology"]["night-vision-equipment"].effects, { type = "unlock-recipe", recipe = "perfect-night-glasses" } )
+table.insert(data.raw["technology"]["lamp"].effects, { type = "unlock-recipe", recipe = "balloon-light" })
+table.insert(data.raw["technology"]["lamp"].effects, { type = "unlock-recipe", recipe = "short-balloon-light" })
 
-
+table.insert(data.raw["technology"]["night-vision-equipment"].effects, { type = "unlock-recipe", recipe = "perfect-night-glasses" })

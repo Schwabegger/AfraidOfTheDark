@@ -27,7 +27,7 @@ data:extend(
 			type = "electric",
 			usage_priority = "secondary-input"
 		},
-		energy_usage_per_tick = "30KW",
+		energy_usage_per_tick = "30kW",
 		light = {intensity = 0.95, size = 120},
 		picture_off =
 		{
@@ -86,7 +86,7 @@ data:extend(
 			type = "electric",
 			usage_priority = "secondary-input"
 		},
-		energy_usage_per_tick = "30KW",
+		energy_usage_per_tick = "30kW",
 		light = {intensity = 0.95, size = 120},
 		picture_off =
 		{
@@ -168,6 +168,23 @@ data:extend(
 		  maximum = 1.0,
 		},
 		categories = {"armor"},
+		-- color_lookup = 
+		-- {
+		-- 	{0.5, "identity"}, -- sunset
+		-- 	{1, "__core__/graphics/color_luts/lut-day.png"} -- day
+		-- }
+		-- color_lookup = 
+		-- {
+		-- 	{0.3, "identity"}, -- sunset
+		-- 	{0.5, "__core__/graphics/color_luts/orange-dawn.png"}, -- night
+		-- 	{0.7, "identity"}, -- sunrise
+		-- 	{1, "__core__/graphics/color_luts/lut-day.png"} -- day
+		-- }
+		-- Daytime all the time
+		color_lookup = 
+		{
+			{1, "__core__/graphics/color_luts/lut-day.png"}
+		}
 	},
 
 }
